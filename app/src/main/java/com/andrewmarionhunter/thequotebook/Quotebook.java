@@ -24,15 +24,15 @@ public class Quotebook extends ActionBarActivity {
         final TextView personText = (TextView) findViewById(R.id.person);
         final ArrayList<Quote> quoteList = new ArrayList<Quote>();
 
-        Quote quote1 = new Quote("Cool Beans", "Rod Kimble");
+        Quote quote1 = new Quote("I don't know who my grandfather was; I am much more concerned to know what his grandson will be.", "Abraham Lincoln");
         quoteList.add(quote1);
-        Quote quote2 = new Quote("How can mirrors be real if our eyes aren't real", "Jaden Smith");
+        Quote quote2 = new Quote("Since when have we Americans been expected to bow submissively to authority and speak with awe and reverence to those who represent us?", "William O. Douglas");
         quoteList.add(quote2);
-        Quote quote3 = new Quote("That's like me blaming owls for how bad I suck at analogies.", "Britta Perry");
+        Quote quote3 = new Quote("Under a government which imprisons any unjustly, the true place for a just man is also a prison.", "Henry David Thoreau");
         quoteList.add(quote3);
-        Quote quote4 = new Quote("You're more of a fun vampire. You don't suck blood, you just suck.", "Troy Barnes");
+        Quote quote4 = new Quote("Do one thing every day that scares you.", "Eleanor Roosevelt");
         quoteList.add(quote4);
-        Quote quote5 = new Quote("I was gonna be the first person in my family to graduate from community college. Everyone else graduated from normal college", "Troy Barnes");
+        Quote quote5 = new Quote("Do you, Ambassador Zorin, deny that the USSR has placed and is placing medium - and intermediate - range missiles and sites in Cuba? Yes or no? Don't wait for the translation. Yes or no?  You are in the courtroom of world opinion. You have denied they exist, and I want to know if I understood you correctly. I am prepared to wait for my answer until hell freezes over. And I am also prepared to present the evidence in this room!", "Adlai Stevenson");
         quoteList.add(quote5);
         touch.setOnClickListener(new View.OnClickListener() {
             @Override
