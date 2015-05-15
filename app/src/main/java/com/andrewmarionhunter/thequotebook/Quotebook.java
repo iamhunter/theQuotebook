@@ -32,7 +32,7 @@ public class Quotebook extends ActionBarActivity {
         quoteList.add(quote3);
         Quote quote4 = new Quote("Do one thing every day that scares you.", "Eleanor Roosevelt");
         quoteList.add(quote4);
-        Quote quote5 = new Quote("Do you, Ambassador Zorin, deny that the USSR has placed and is placing medium - and intermediate - range missiles and sites in Cuba? Yes or no? Don't wait for the translation. Yes or no?  You are in the courtroom of world opinion. You have denied they exist, and I want to know if I understood you correctly. I am prepared to wait for my answer until hell freezes over. And I am also prepared to present the evidence in this room!", "Adlai Stevenson");
+        Quote quote5 = new Quote("Sitting at the table doesn't make you a diner, unless you eat some of what's on that plate. Being here in America doesn't make you an American. Being born here in America doesn't make you an American.", "Malcom X");
         quoteList.add(quote5);
         touch.setOnClickListener(new View.OnClickListener() {
             @Override
