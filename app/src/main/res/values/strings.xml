@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">theQuotebook</string>
-
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
     <string name="begin">Tap the screen to begin</string>
 </resources>
