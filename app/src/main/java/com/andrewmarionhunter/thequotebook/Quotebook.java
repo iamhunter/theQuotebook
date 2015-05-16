@@ -6,10 +6,8 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
-
 import java.util.ArrayList;
 
 
@@ -24,7 +22,7 @@ public class Quotebook extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quotebook);
 
-        setTitle("My new title");
+        setTitle("");
 
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-2054016110375376/7500253841");
