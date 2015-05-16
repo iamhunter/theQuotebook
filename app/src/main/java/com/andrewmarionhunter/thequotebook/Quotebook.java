@@ -6,8 +6,10 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+
 import java.util.ArrayList;
 
 
@@ -26,12 +28,7 @@ public class Quotebook extends ActionBarActivity {
 
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-2054016110375376/7500253841");
-
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice("YOUR_DEVICE_HASH")
-                .build();
-
-        mInterstitialAd.loadAd(adRequest);
+        loadInterstitial();
 
         RelativeLayout touch = (RelativeLayout) findViewById(R.id.touch);
         final TextView quoteText = (TextView) findViewById(R.id.quote);
@@ -77,11 +74,9 @@ public class Quotebook extends ActionBarActivity {
                     personText.setText(q.getPerson());
                     count = count + 1;
                 } else{
-                    if (mInterstitialAd.isLoaded()) {
-                        mInterstitialAd.show();
-                    }
-
+                    showInterstitial();
                     count = 0;
+                    loadInterstitial();
                 }
             }
         });
@@ -94,4 +89,15 @@ public class Quotebook extends ActionBarActivity {
         return true;
     }
 
+    private void showInterstitial() {
+        // Show the ad if it's ready. Otherwise toast and reload the ad.
+        if (mInterstitialAd != null && mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        }
+    }
+
+    private void loadInterstitial() {
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mInterstitialAd.loadAd(adRequest);
+    }
 }
